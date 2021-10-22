@@ -1,0 +1,28 @@
+{% load static %}
+<title>Генератор паролий</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+<div class="container">
+    <h2>Генератор паролей</h2>
+    <form class="form" action="{% url 'password' %}">
+        <select name="length">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="12" selected="selected">12</option>
+            <option value="16">16</option>
+        </select><span> Длина пароля</span>
+        <br><br>
+        <input type="checkbox" name="uppercase"><span> Прописные</span>
+        <br>
+        <input type="checkbox" name="numbers"><span> Числа</span>
+        <br>
+        <input type="checkbox" name="special"> <span> Спец. символы</span>
+        <br><br>
+        <input class="bt" type="submit" value="Сгенерировать">
+    </form>
+    <a class="info" href="{% url 'info' %}">Info</a>
+</div>
+<div class="container concd">
+    <h2>pass: {{ password }}</h2>
+</div>

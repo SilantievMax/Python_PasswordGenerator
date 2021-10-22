@@ -1,0 +1,46 @@
+h2, span, p {
+    color: #EDF2F4;
+}
+
+body {
+    background: #8D99AE;
+}
+
+.container {
+    border: solid #8D99AE 1px;
+    margin: 100px auto 10px;
+    max-width: 400px;
+    background-color: #2B2D42;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.concd {
+    margin: 0px auto 10px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 4px 10px 16px;
+    border-bottom: 1px solid #D90429;
+}
+
+.form {
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+.bt {
+    display: block
+    margin: 0 40px;
+    background: #8D99AE;
+    border: solid #8D99AE;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #000;
+}
+
+.info {
+    display: block;
+    text-align: right
+}
